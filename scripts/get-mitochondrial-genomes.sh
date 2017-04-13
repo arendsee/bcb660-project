@@ -1,3 +1,12 @@
-#!/usr/bin/env bash
+# Retrieve mitochondrial genomes
+# If they are already downloaded, do nothing
 
-wget -nd -r -A gz ftp://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion
+outdir=data_mitochondria
+
+if [[ -d $outdir ]]
+then
+    mkdir $outdir
+    wget \
+        -P $outdir -nd -r -A gz \
+        ftp://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion
+fi
