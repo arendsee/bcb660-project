@@ -55,6 +55,7 @@ cat > \$abort_cmd << INNER_EOL
 #!/usr/bin/env bash
 # Kill autoslurm run of '\$base'
 scancel \$SLURM_JOB_ID
+rm \$abort_cmd
 INNER_EOL
 chmod 755 \$abort_cmd
 OUTER_EOL
@@ -63,6 +64,9 @@ OUTER_EOL
 cat $code |
     # remove the hasbang line
     grep -v '^#!' >> $filename
+
+# When the script completes, remove the abort script
+echo 'wait ; rm $abort_cmd' >> $filename
 
 # submit the script
 sbatch $filename && echo "Job Submitted" >&2 || echo "Failed to submit job" >&2
