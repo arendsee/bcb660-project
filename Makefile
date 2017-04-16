@@ -1,3 +1,8 @@
+.PHONY: setup
+setup:
+	[[ -d litade ]] || git clone https://github.com/arendsee/litade
+	[[ -f litade/taxdump ]] || scripts/autoslurm.sh litade/setup.sh
+
 .PHONY: run
 run:
 	[[ -d blastdb ]] || scripts/autoslurm.sh "--time=24:00:00" scripts/build_blast_db.pbs
