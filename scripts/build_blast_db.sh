@@ -19,9 +19,15 @@ then
         awk  'NR % 4 == 1 {print ">" $0} NR % 4 == 2 {print}' > $tmpfa
 fi
 
-# Make the blast database, to access it with blast, use a command of the form:
-# $ blastp -db /blastdb/bioblitz -query whatever.faa [options]
-makeblastdb -in $tmpfa -dbtype nucl -out blastdb/bioblitz -title bioblitz
+if [[ ! -d blastdb ]]
+then
+    # Make the blast database, to access it with blast, use a command of the form:
+    # $ blastp -db /blastdb/bioblitz -query whatever.faa [options]
+    # makeblastdb -in $tmpfa -dbtype nucl -out blastdb/bioblitz -title bioblitz
+    echo "making a db" > &2
+else
+    echo "not making a db, already exists" > &2
+fi
 
 # If makeblastdb fails, 
 if [[ $? -eq 0 ]]

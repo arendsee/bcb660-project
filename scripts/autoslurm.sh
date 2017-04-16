@@ -14,7 +14,7 @@ code=$1
 shift
 
 base=${code%.*}
-filename="__${base}.pbs"
+filename=$(tr '/' '_' <<< "__${base}.pbs")
 
 
 [[ -d archive ]] || mkdir archive
