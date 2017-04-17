@@ -2,6 +2,7 @@
 setup:
 	[[ -d litade ]] || git clone https://github.com/arendsee/litade
 	[[ -f litade/taxdump ]] || scripts/autoslurm.sh litade/setup.sh
+	mv parent-child.txt litade || echo -n
 
 .PHONY: run
 run:
