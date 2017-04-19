@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+module load python/3.6.0
+
 git clone https://github.com/arendsee/litade
 cd litade && ./setup.sh && cd ..
 

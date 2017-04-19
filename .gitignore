@@ -1,5 +1,10 @@
 blastdb/
 archive/
+smof/
 arthropoda-taxids.tab
 data_mitochondria/
 litade/
+err_*
+out_*
+scripts_*
+abort*
