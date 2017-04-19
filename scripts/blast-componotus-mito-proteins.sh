@@ -16,4 +16,4 @@ tblastn                  \
     -db blastdb/bioblitz \
     -evalue 1e-2         \
     -num_threads 8       \
-    -outfmt '7 qseqid sseqid qstart qstop sstart sstop bitscore evalue' > camponotus-blast.tab
+    -outfmt '7 qseqid sseqid qlen slen qstart qstop sstart sstop bitscore evalue' > camponotus-blast.tab
