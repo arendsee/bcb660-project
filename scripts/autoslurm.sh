@@ -19,7 +19,7 @@ filename=${base}.pbs
 
 
 [[ -d archive ]] || mkdir archive
-mv err* out* archive || echo "All clean"
+mv "err_$base"* "out_$base"* archive || echo "All clean"
 if [[ -f $filename ]]
 then
     mv $filename archive/$filename.$RANDOM
