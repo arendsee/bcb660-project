@@ -1,0 +1,16 @@
+id	Order	Family	Genus species	Common_Name	Sample
+1	Blattaria	Blattidae	unknown	cockroach	1/2 abdomen
+2	Coleoptera	Silphidae	Nicrophorus sp	carrion beetle	1/2 thorax
+3	Diptera	Syrphidae	unknown	hover fly	whole abdomen
+4	Hemiptera	Reduviidae	Sinea diadema	spiny assassin bug	1/2 abdomen
+5	Hymenoptera	Formicidae	Camponotus pennsylvanicus	black carpenter ant queen	1/2 thorax
+6	Hymenoptera	Vespidae	Polistinae Pollutes fuscatus	northern paper wasp male	1/2 thorax
+7	Hymenoptera	Vespidae	Eumeninae  Ancistrocerus sp.	mason wasp	1/2 abdomen
+8	Lepidoptera	Papilionidae	Papilio cresphontes	giant swallowtail butterfly	thorax chunk
+9	Trichoptera	Phryganeidae	unknown	caddisfly	1/2 abdomen
+10	Mantodea	Mantidae	Tenodera sinensis	Chinese mantis	foreleg joint
+11	Neuroptera	Chrysopidae	unknown	green lacewing	head and thorax
+12	Odonata	Libellulidae	Sympetrum obstrusum	white-faced meadowhawk dragonfly	1/2 thorax
+13	Orthoptera	Tettigoniidae	unknown	katydid	1/3 head
+14	Arachnida	unknown	unknown	spider	leg segment
+15	Myriapoda	unknown	unknown	millipede	3-4 body segments
