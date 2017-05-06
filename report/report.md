@@ -293,8 +293,10 @@ supplementary materials):
 For converting the reads from fastq to fasta format
 
 ``` sh
-zcat $r1 $r2 |
-    awk 'NR % 4 == 1 {print ">" $0} NR % 4 == 2 {print}' > $tmpfa
+awk '
+    NR % 4 == 1 {print ">" $0}
+    NR % 4 == 2 {print}
+' > $tmpfa
 ```
 
 For building the BLAST database
