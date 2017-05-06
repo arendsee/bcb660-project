@@ -113,9 +113,14 @@ a fields that is unknown.
 
 ## Mitochondrial dataset <!-- by Zeb --!>
 
-We used the mitochondria currently published in NCBI RefSeq
-(ftp://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/). There are 7652
-species in total, and the number of species represented in each clade in the table one is represented the Table 2.
+We used the mitochondria currently published in NCBI RefSeq:
+
+```
+ftp://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/
+```
+
+There are 7652 species in total, and the number of species represented in each
+clade in the table one is represented the Table 2.
 
 
 clade              total  sequenced
