@@ -1,62 +1,62 @@
 <!-- All of this was written by Christian, except where indicated. !-->
 
+# Introduction
 
-# Introduction <!-- By Jack --!>
-
-The study of biota diversity has been a long-living topic fascinating a number
-of investigators in biological science ever since the time of natural history.
-Starting from recording the macrofauna and macroflora of an opening ecosystem,
-the focus on species recognition has been gradually shifted from the visible
-world to the micro ecosystem, the wonderland of microorganism. Unlike studying
-the species composition of macrobiota, the invisible nature of microbiota
-brings researchers a huge barrier in identifying and recording the composition
-of species diversity. The manageable microorganisms have once been the only
-group of species that can be identified from the standard protocol like, for
-example, isolating and culturing pure clones from a bunch of mixed species to
+The study of biota diversity has been a long-living topic which fascinates
+biologists from generation to generation. Starting from recording the
+macrofauna and macroflora of an opening wild, the focus on species recognition
+has been gradually shifted from the visible world to the micro ecosystem, the
+wonderland of microorganism. Unlike the study of macrobiota, the invisible
+nature of microbiota brings researchers a huge barrier in identifying and
+recording the composition of species diversity. The manageable microorganisms
+have once been the only groups of species that can be identified from the
+standard protocol like, for example, isolating and culturing pure clones to
 determine their classification with biochemical analyses; those species that
-cannot be cultured then will leave no trace of themselves. Such workflows,
-unsurprisingly, depict only a cruel contour of the true picture of species
-diversity in microbiota; moreover, cell culturing is a time-consuming step,
-which seriously hampers the efficiency of workflow. Consequently, species
-identification without cell culturing became the critical point in build an
-efficient workflow in studying biodiversity of microbiota.
+cannot be cultured will then leave no trace of themselves. Such workflows,
+unsurprisingly, depict only a cruel contour of the true picture of microbiota
+diversity; moreover, as a time-consuming step, cell culturing seriously hampers
+the efficiency of total workflow. Consequently, cell culturing-free workflow
+became the critical focus in building a novel way of studying microbial
+diversity.
 
-The emergence of metagenomics, however, solves the problem once and for all.
+The development of metagenomics, however, solves the problem once and for all.
 Metagenomics refers to the study of retrieving and analyzing the genetic
-information from environmental samples directly without species identification
-in advance. A snapshot of species composition can now be recorded through the
-powerful sequencing technology and analyzed by a variety of bioinformatic
+information from environmental samples without species identification in
+advance. A snapshot of species composition can now be recorded through the
+powerful sequencing technology and then analyzed by a variety of bioinformatic
 tools. A series of software has been published and designed for different
 purposes. For example, PHACCS, a bioinformatic tool designed for estimating of
-the structure and diversity of uncultured viral communities; QIIME, an
-open-source bioinformatics pipeline for performing microbiome analysis
-including quality filtering, OTU picking, taxonomic assignment, phylogenetic
-reconstruction, and diversity analyses; MLST, a nucleotide sequence based
-approach for the unambiguous characterization of isolates of bacteria and other
-organisms via defining the distinct pattern of alleles combination in a series
-of loci involved in microbial metabolism. With the aid of metagenomics, the
-study microbiota has become a popular topics among a number of biological
-fields including environmental science, industrial fermentation,
-gastrointestinal health, and even mental disorders, showing the amazing linkage
-between the fluctuation of microbiota and a great deal of phenomena including
-soil fertility, diet preference, metabolomics, and human health. These studies
-unveil the hierarchical nature of the biological system, suggesting that the
-facts of macroscopic scale are tightly regulated by the composition of
-microbiota.
+the structure and diversity of uncultured viral communities (Angly et al.,
+2005); QIIME, an open-source bioinformatics pipeline for performing microbiome
+analysis including quality filtering, OTU picking, taxonomic assignment,
+phylogenetic reconstruction, and diversity analyses (Caporaso et al., 2010);
+MLST, a nucleotide sequence based approach for the unambiguous characterization
+of isolates of bacteria and other organisms via defining the distinct pattern
+of alleles combination in a series of loci involved in microbial metabolism
+(Maiden et al., 1998). With the aid of metagenomics, the study microbiota has
+become a popular topic among a number of biological fields including
+environmental science (Loviso et al., 2015, Behzad et al., 2015), industrial
+fermentation (Jung et al., 2011, Stolze et al., 2015), gastrointestinal health
+(Frank and Pace, 2008, Preidis and Versalovic, 2009), and even mental disorders
+(Sampson et al., Bedarf et al., 2017), showing the amazing linkage between the
+fluctuation of microbiota and a great deal of phenomena including soil
+fertility (Carbonetto et al., 2014), diet preference (Conlon and Bird, 2014),
+metabolomics (Turnbaugh and Gordon, 2008), and ageing (Rampelli et al., 2013).
+These studies unveil the hierarchical nature of the biological system,
+revealing that the macroscopic world is tightly regulated by the microbiota
+communities.
 
-Whether the pipelines of metagenomics provide great help in documenting the
-biodiversity of multicellular communities would be a challenging and valuable
-trial. With the great success in the study of microbial diversity, metagenomics
-has been proved to have great potential in identifying biota diversity directly
-from environmental samples. Here, by using a RNA-seq dataset extracted from
-a mixed collection of body fragments from several species of arthropod, we
-tested the efficiency of two pipelines, based on Basic Local Alignment Search
-Tool (BLAST) against all known sequences of NADH dehydrogenase subunit 6 from
-NCBI database, with either raw RNA seq or de novo transcripts assembly in
-advance, in identifying species composition of the meta-transcriptomic dataset.
-Collecting originally from an activity of BioBlitz, the popular field study of
-surveying and recording all the living species within a designated area, we
-have a complete inventory of the species contributing to the RNA-seq dataset as
+With the great success in the study of microbial diversity, transplanting the
+metagenomic workflow to the study of multicellular communities is a challenging
+but valuable trial. Here, by using a RNA-seq dataset extracted from a mixed
+collection of body fragments from several species of arthropods, we tested the
+efficiency of two pipelines, based on Basic Local Alignment Search Tool (BLAST)
+against all known sequences of NADH dehydrogenase subunit 6 from NCBI database,
+with either raw RNA seq or de novo transcripts assembly in advance, in
+identifying species composition of the meta-transcriptomic dataset. Collecting
+originally from an activity of BioBlitz, the popular field study of surveying
+and recording all the living species within a designated area, we have
+a complete inventory of the species contributing to the RNA-seq dataset as
 a standard in evaluating the efficiency of each of the pipelines.
 
 More than showing the potential of metagenomics in species identifying
@@ -69,14 +69,14 @@ complex communities of these small creatures, dwelling in soil or in a leaf
 cover layer on the soil surface, are hard to be completely covered and analyzed
 by traditional workflow based on morphology analyses, and, surprisingly, only
 a handful of publications have tried to address such questions with sequencing
-technology. Considering the great number of soil-transmitted pests that erode
-the total output value of agriculture globally, our work, contributing to
-species identification of invertebrates from meta-transcriptomic data, suggests
+technology (Arribas et al., 2016, Cicconardi et al., 2017, Andújar et al.,
+2015). Considering the great number of soil-transmitted pests that erode the
+total output value of agriculture globally, our work, contributing to species
+identification of invertebrates from meta-transcriptomic data, suggests
 a possibility of building a pipeline testing the presence of pests from soil
 samples. Our study shed light on applying metagenomics to species
-identification of invertebrates, providing a possible alternative of pest
-control in industrial agriculture.
-
+identification of invertebrates, which can be a possible alternative to pest
+control in industrial agriculture. 
 
 
 # Materials and Methods
@@ -439,17 +439,25 @@ Here, we assessed two different methods for stablishing the number and type of
 species in a BioBlitz sampling. The first method relied on a more conservative
 pipeline, using “flagship” next generation sequencing analysis software such as
 Bowtie2 and Trinity. The second method involved a very simplified, yet elegant,
-pipeline using BLAST and locally-made scripts (bash and R scripts). Each method
-provided enough data to suggest a list of species present however we can
-appreciate the following differences/limitations: while the pipeline I gave us
-much less species (we only obtain 12 species compared to the 214 obtained with
-pipeline II) it seems to be very accurate on the number and type of species. On
-the other hand, our pipeline II needed an extra filtering step. However, having
-a high number of species on pipeline II can give us much more flexibility for
-performing further analysis that we may want (such as determining non-insect
-species presence our sampling). As for required time and resources, both
-pipelines performed very similar, running the entire pipeline in about 2 days
-on the hpc cluster.
+pipeline by using BLAST and locally-made scripts (bash and R scripts). At the
+beginning of the project, we tried to run a BUSCO analysis on the RNA-seq data
+to check the percentage of RNA reads coming from Arthropods, yet it took a long
+time, two days is not even sufficient for a run, to finish the analysis on the
+forward reads. As we have then decided to use mitochondrial genes as the
+genetic marker for species identification, we figured it out that the raw data
+simply contained too many non-mitochondrial reads, which should be ignored from
+our workflows. We soon stopped the BUSCO analysis and turned to filter the RNA
+reads directly either by blasting or aligning them against mitochondrial
+genes/genomes. Both methods provided sufficient information to construct a list
+of species, yet we still noticed some differences/limitations between these two
+pipelines: while the pipeline I gave us much lesser number of species (12 in
+pipeline I compared to 214 in pipeline II), the numbers and types of species
+seems to be much precise from this pipeline. On the other hand, pipeline II,
+required an extra filtering step, offered us a higher number of species and
+gave us a greater flexibility for performing further analysis that we may want
+(such as determining non-insect species presence our sampling). As for the
+required time and resources, both pipelines had similar performance, finishing
+the entire process within 2 days on the hpc cluster.
 
 From these results, we only can conclude that both pipelines are useful for
 identifying the present species on a BioBlitz sampling. Whether you choose to
@@ -474,15 +482,54 @@ and writing of this project.
 
 # References
 
-Andrews S. (2010). FastQC: a quality control tool for high throughput sequence data. Available online at: http://www.bioinformatics.babraham.ac.uk/projects/fastqc
+AND JAR, C., ARRIBAS, P., RUZICKA, F., CRAMPTON-PLATT, A., TIMMERMANS, M. J. T. N. & VOGLER, A. P. 2015. Phylogenetic community ecology of soil biodiversity using mitochondrial metagenomics. Molecular Ecology, 24, 3603-3617.
 
-Camacho, C., Coulouris, G., Avagyan, V., Ma, N., Papadopoulos, J., Bealer, K. and Madden, T.L., 2009. BLAST+: architecture and applications. BMC bioinformatics, 10(1), p.421.
+ANDREWS S. 2010. FastQC: a quality control tool for high throughput sequence data. Available online at: http://www.bioinformatics.babraham.ac.uk/projects/fastqc
 
-Grabherr, M.G., Haas, B.J., Yassour, M., Levin, J.Z., Thompson, D.A., Amit, I., Adiconis, X., Fan, L., Raychowdhury, R., Zeng, Q. and Chen, Z., 2011. Trinity: reconstructing a full-length transcriptome without a genome from RNA-Seq data. Nature biotechnology, 29(7), p.644.
+ANGLY, F., RODRIGUEZ-BRITO, B., BANGOR, D., MCNAIRNIE, P., BREITBART, M., SALAMON, P., FELTS, B., NULTON, J., MAHAFFY, J. & ROHWER, F. 2005. PHACCS, an online tool for estimating the structure and diversity of uncultured viral communities using metagenomic information. BMC Bioinformatics, 6, 41.
 
-Langmead, B. and Salzberg, S.L., 2012. Fast gapped-read alignment with Bowtie 2. Nature methods, 9(4), pp.357-359.
+ARRIBAS, P., AND JAR, C., HOPKINS, K., SHEPHERD, M. & VOGLER, A. P. 2016. Metabarcoding and mitochondrial metagenomics of endogean arthropods to unveil the mesofauna of the soil. Methods in Ecology and Evolution, 7, 1071-1081.
 
-Stöver, B.C. and Müller, K.F., 2010. TreeGraph 2: combining and visualizing evidence from different phylogenetic analyses. BMC bioinformatics, 11(1), p.7.
+BEDARF, J. R., HILDEBRAND, F., COELHO, L. P., SUNAGAWA, S., BAHRAM, M., GOESER, F., BORK, P. & W LLNER, U. 2017. Functional implications of microbial and viral gut metagenome changes in early stage L-DOPA-naïve Parkinson’s disease patients. Genome Medicine, 9, 39.
+
+BEHZAD, H., GOJOBORI, T. & MINETA, K. 2015. Challenges and opportunities of airborne metagenomics. Genome Biol Evol, 7, 1216-26.
+
+CAMACHO, C., COULOURIS, G., AVAGYAN, V., MA, N., PAPADOPOULOS, J., BEALER, K. AND MADDEN, T.L., 2009. BLAST+: architecture and applications. BMC bioinformatics, 10(1), p.421.
+
+CAPORASO, J. G., KUCZYNSKI, J., STOMBAUGH, J., BITTINGER, K., BUSHMAN, F. D., COSTELLO, E. K., FIERER, N., PENA, A. G., GOODRICH, J. K., GORDON, J. I., HUTTLEY, G. A., KELLEY, S. T., KNIGHTS, D., KOENIG, J. E., LEY, R. E., LOZUPONE, C. A., MCDONALD, D., MUEGGE, B. D., PIRRUNG, M., REEDER, J., SEVINSKY, J. R., TURNBAUGH, P. J., WALTERS, W. A., WIDMANN, J., YATSUNENKO, T., ZANEVELD, J. & KNIGHT, R. 2010. QIIME allows analysis of high-throughput community sequencing data. Nat Methods, 7, 335-6.
+
+CARBONETTO, B., RASCOVAN, N., ÁLVAREZ, R., MENTABERRY, A. & V ZQUEZ, M. P. 2014. Structure, Composition and Metagenomic Profile of Soil Microbiomes Associated to Agricultural Land Use and Tillage Systems in Argentine Pampas. PLOS ONE, 9, e99949.
+
+CICCONARDI, F., BORGES, P. A., STRASBERG, D., OROMI, P., LOPEZ, H., PEREZ-DELGADO, A. J., CASQUET, J., CAUJAPE-CASTELLS, J., FERNANDEZ-PALACIOS, J. M., THEBAUD, C. & EMERSON, B. C. 2017. MtDNA metagenomics reveals large-scale invasion of belowground arthropod communities by introduced species. Mol Ecol.
+
+CONLON, M. A. & BIRD, A. R. 2014. The impact of diet and lifestyle on gut microbiota and human health. Nutrients, 7, 17-44.
+
+FRANK, D. N. & PACE, N. R. 2008. Gastrointestinal microbiology enters the metagenomics era. Curr Opin Gastroenterol, 24, 4-10.
+
+GRABHERR, M.G., HAAS, B.J., YASSOUR, M., LEVIN, J.Z., THOMPSON, D.A., AMIT, I., ADICONIS, X., FAN, L., RAYCHOWDHURY, R., ZENG, Q. AND CHEN, Z., 2011. Trinity: reconstructing a full-length transcriptome without a genome from RNA-Seq data. Nature biotechnology, 29(7), p.644.
+
+JUNG, J. Y., LEE, S. H., KIM, J. M., PARK, M. S., BAE, J. W., HAHN, Y., MADSEN, E. L. & JEON, C. O. 2011. Metagenomic analysis of kimchi, a traditional Korean fermented food. Appl Environ Microbiol, 77, 2264-74.
+
+LANGMEAD, B. AND SALZBERG, S.L., 2012. Fast gapped-read alignment with Bowtie 2. Nature methods, 9(4), pp.357-359.
+
+LOVISO, C. L., LOZADA, M., GUIBERT, L. M., MUSUMECI, M. A., SARANGO CARDENAS, S., KUIN, R. V., MARCOS, M. S. & DIONISI, H. M. 2015. Metagenomics reveals the high polycyclic aromatic hydrocarbon-degradation potential of abundant uncultured bacteria from chronically polluted subantarctic and temperate coastal marine environments. J Appl Microbiol, 119, 411-24.
+
+MAIDEN, M. C., BYGRAVES, J. A., FEIL, E., MORELLI, G., RUSSELL, J. E., URWIN, R., ZHANG, Q., ZHOU, J., ZURTH, K., CAUGANT, D. A., FEAVERS, I. M., ACHTMAN, M. & SPRATT, B. G. 1998. Multilocus sequence typing: a portable approach to the identification of clones within populations of pathogenic microorganisms. Proc Natl Acad Sci U S A, 95, 3140-5.
+
+PREIDIS, G. A. & VERSALOVIC, J. 2009. Targeting the human microbiome with antibiotics, probiotics, and prebiotics: gastroenterology enters the metagenomics era. Gastroenterology, 136, 2015-31.
+
+RAMPELLI, S., CANDELA, M., TURRONI, S., BIAGI, E., COLLINO, S., FRANCESCHI, C., O'TOOLE, P. W. & BRIGIDI, P. 2013. Functional metagenomic profiling of intestinal microbiome in extreme ageing. Aging (Albany NY), 5, 902-12.
+
+SAMPSON, T. R., DEBELIUS, J. W., THRON, T., JANSSEN, S., SHASTRI, G. G., ILHAN, Z. E., CHALLIS, C., SCHRETTER, C. E., ROCHA, S., GRADINARU, V., CHESSELET, M.-F., KESHAVARZIAN, A., SHANNON, K. M., KRAJMALNIK-BROWN, R., WITTUNG-STAFSHEDE, P., KNIGHT, R. & MAZMANIAN, S. K. 2016. Gut Microbiota Regulate Motor Deficits and Neuroinflammation in a Model of Parkinson’s Disease. Cell, 167, 1469-1480.e12.
+
+STOLZE, Y., ZAKRZEWSKI, M., MAUS, I., EIKMEYER, F., JAENICKE, S., ROTTMANN, N., SIEBNER, C., PUHLER, A. & SCHLUTER, A. 2015. Comparative metagenomics of biogas-producing microbial communities from production-scale biogas plants operating under wet or dry fermentation conditions. Biotechnol Biofuels, 8, 14.
+
+STÖVER, B.C. AND MÜLLER, K.F., 2010. TreeGraph 2: combining and visualizing evidence from different phylogenetic analyses. BMC bioinformatics, 11(1), p.7.
+
+TURNBAUGH, P. J. & GORDON, J. I. 2008. An invitation to the marriage of metagenomics and  
+    metabolomics. Cell, 134, 708-13.
+
+
 
 # Scripts
 
